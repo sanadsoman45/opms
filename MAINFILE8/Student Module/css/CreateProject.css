@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
+
+html{
+    scrollbar-width: none;
+}
+
+input:-webkit-autofill:focus {
+    transition: background-color 9000s ease-in-out 0s;
+}
+
+body {
+    margin:0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url(tech_img_5.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.createProject{
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #c4bbbb;
+    border-radius: 15px;
+    width: 23em;
+    padding: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.createProjectHeader{
+    font-size:22px;
+    font-weight: bold;
+    font-family:"Arial Black", Gadget, sans-serif;
+    color: blue;
+    text-align: center;
+}
+/* /////////////////////////////////////////////////////////////////////////////////// */
+.user_Name{
+    position:relative;
+    border: 1px solid #c4bbbb;
+    margin-top: 40px;
+    margin-left: 6px;
+    border-radius: 7px;
+    width: 55%;
+    height: 40px;
+    display: inline-block;
+}
+
+.user_Name .text_type_name{
+    height: 100%;
+    width: 100%;
+    padding-left: 12px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    transition: .4s;
+}
+
+.user_Name label{
+    position:absolute;
+    pointer-events: none;
+    background:white;
+    color:blue;
+    left: 12px;
+    margin-top: -21px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .4s;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+.user_ID{
+    position:relative;
+    border: 1px solid #c4bbbb;
+    margin-top: 40px;
+    margin-left: .9em;
+    border-radius: 7px;
+    width: 35%;
+    height: 40px;
+    display: inline-block;
+}
+
+.user_ID .text_type_ID{
+    height: 100%;
+    width: 100%;
+    padding-left: 12px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    transition: .4s;
+}
+
+.user_ID label{
+    position:absolute;
+    background:white;
+    pointer-events: none;
+    color: blue;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .4s;
+    font-size: 16px;
+    margin-top: -21px;
+    font-family: sans-serif;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+
+.Pro_Name{
+    position:relative;
+    border: 1px solid #c4bbbb;
+    margin-top: 28px;
+    margin-left: .4em;
+    border-radius: 7px;
+    width: 95.5%;
+    height: 40px;
+    display: inline-block;
+}
+
+.Pro_Name .text_type_Pro_Name{
+    height: 100%;
+    width: 100%;
+    padding-left: 12px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    transition: .4s;
+}
+
+.text_type_Pro_Name:invalid {
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.Pro_Name label{
+    position:absolute;
+    pointer-events: none;
+    color: #c4bbbb;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .4s;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.text_type_Pro_Name:focus~label,
+.text_type_Pro_Name:valid~label{
+    background:white;
+    font-size:16px;
+    color:blue;
+    margin-top: -21px;
+}
+/* /////////////////////////////////////////////////////////////////////////////////// */
+
+.Type_Pro{
+    position:relative;
+    border: 1px solid #c4bbbb;
+    margin-top: 28px;
+    margin-left: .4em;
+    border-radius: 7px;
+    width: 95.5%;
+    height: 40px;
+    display: inline-block;
+}
+
+.Type_Pro .text_type_Type_Pro{
+    height: 100%;
+    width: 100%;
+    padding-left: 12px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    transition: .4s;
+    -webkit-appearance:none;
+}
+
+.text_type_Type_Pro:invalid {
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.dLArrow{
+    margin-top: -1.8em;
+    margin-left: 20em;
+}
+
+.downArrow1{
+    width: 18px;
+    height: 20px;
+}
+
+.downArrow2{
+    width: 18px;
+    height: 20px;
+    display: none;
+}
+
+.Type_Pro label{
+    position:absolute;
+    pointer-events: none;
+    color: #c4bbbb;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .4s;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.text_type_Type_Pro:focus~label,
+.text_type_Type_Pro:valid~label{
+    background:white;
+    font-size:16px;
+    color:blue;
+    margin-top: -21px;
+}
+/* /////////////////////////////////////////////////////////////////////////////////// */
+
+.text_type_Pro_Description {
+    resize: none;
+}
+
+.Pro_Description{
+    position:relative;
+    border: 1px solid #c4bbbb;
+    margin-top: 28px;
+    margin-left: .4em;
+    border-radius: 7px;
+    padding-top:20px;
+    width: 95.5%;
+    height: 8.5em;
+    display: inline-block;
+}
+
+.Pro_Description .text_type_Pro_Description{
+    height: 100%;
+    width: 100%;
+    padding-left: 12px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    transition: .4s;
+    scrollbar-width: none;
+}
+
+.text_type_Pro_Description:invalid {
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.Pro_Description label{
+    position:absolute;
+    pointer-events: none;
+    color: #c4bbbb;
+    left: 12px;
+    margin-top: -12px;
+    transition: .4s;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.Pro_Description span{
+    position:absolute;
+    color: #c4bbbb;
+    left: 21em;
+    margin-top: -12px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.text_type_Pro_Description:focus~label,
+.text_type_Pro_Description:valid~label{
+    background:white;
+    font-size:16px;
+    color:blue;
+    margin-top: -29px;
+}
+/* /////////////////////////////////////////////////////////////////////////////////// */
+
+.create_Btn{
+    border: 1px solid blue;
+    background-color: blue;
+    border-radius: 9px;
+    text-align:center;
+    width: 8em;
+    height: 2.3em;
+    margin-top: 20px;
+    margin-left: 14.4em;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+}
+
+.text_type_Create_Btn{
+    border: none;
+    outline: none;
+    background: none;
+    color: #ffffff;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}

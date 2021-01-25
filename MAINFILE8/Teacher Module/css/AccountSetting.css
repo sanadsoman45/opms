@@ -1,0 +1,1288 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
+
+* {
+    border-radius: 25px;
+}
+
+html{
+    scrollbar-width: none;
+}
+
+body {
+    margin:0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url("AccountSetting.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear {
+  display: none;
+}
+/* //////////////////////////////////////////////////////////////// */
+.AccountSettingHeader{
+    height: 2em;
+    padding-top: .8em;
+    top: 0em;
+    position: sticky;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: .5em;
+    background-image: url(AccountSettingSlider.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 0;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+.AccSetBackImg{
+    top: 1em;
+    position: sticky;
+    width: 3em;
+    height: 3em;
+    margin-top: -5.2em;
+    margin-left: 1.2em;
+    z-index: 1;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* //////////////////////////////////////////////////////////////// Profile Details*/
+.profileDetails{
+    top: 5em;
+    height: 18em;
+    width: 75em;
+    box-shadow: 0px 250px 200px -20px #ffffff inset,
+                0px 4px 5px rgba(0, 0, 0, .4);
+    border-radius: 15px;
+    margin-left: 10em;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+.profileDetailsImg{
+    width: 2.4em;
+    height: 2.4em;
+    margin-top: 1em;
+    margin-left: 2.5em;
+    border-radius: 0;
+}
+
+.profileDetailsName{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    color: #323030;
+    margin-left: 3.9em;
+    margin-top: -1.35em;
+    user-select: none;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+.outer_pDFirstName{
+    margin-left: 3.7em;
+    margin-top: 1em;
+}
+
+.pDFirstName{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #323030;
+}
+
+.outer_pDFirstNameField{
+    width: 15.5em;
+    height: 2.8em;
+    border: 1px solid rgba(122, 122, 122, .6);
+    border-radius: 10px;
+    margin-top: -0.9em;
+    padding-left: 0.5em;
+    background-color: #ffffff;
+}
+
+.pDFirstNameField{
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+.outer_pDNumber{
+    margin-left: 24em;
+    margin-top: -5.45em;
+}
+
+.pDNumber{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #323030;
+}
+
+.outer_pDNumberField{
+    width: 15.5em;
+    height: 2.8em;
+    border: 1.5px solid rgba(122, 122, 122, .5);
+    border-radius: 10px;
+    margin-top: -0.9em;
+    padding-left: 0.5em;
+    background-color: #ffffff;
+}
+
+.pDNumberField{
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.outer_pDEmailId{
+    margin-left: 3.7em;
+    margin-top: 1.8em;
+}
+
+.pDEmailId{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #323030;
+}
+
+.outer_pDEmailIdField{
+    width: 15.5em;
+    height: 2.8em;
+    border: 1px solid rgba(122, 122, 122, .6);
+    border-radius: 10px;
+    margin-top: -0.9em;
+    padding-left: 0.5em;
+    background-color: #ffffff;
+}
+
+.pDEmailIdField{
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/* //////////////////////////////////////////////////////////////// Change Password*/
+.changePassword{
+    height: 12em;
+    width: 75em;
+    box-shadow: 0px 150px 190px 5px #ffffff inset,
+                0px 4px 5px rgba(0, 0, 0, .4);
+    border-radius: 15px;
+    margin-left: 10em;
+    margin-top: 1.2em;
+}
+
+.changePasswordImg{
+    width: 2em;
+    height: 2em;
+    margin-top: 1em;
+    margin-left: 2.5em;
+    border-radius: 0;
+}
+
+.changePasswordName{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    color: #292727;
+    margin-left: 3.8em;
+    margin-top: -1.25em;
+    user-select: none;
+}
+
+.outer_cPPassword{
+    margin-left: 3.7em;
+    margin-top: 0em;
+}
+
+.cPPassword{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #323030;
+}
+
+.outer_cPPasswordField{
+    width: 15.5em;
+    height: 2.8em;
+    border: 1.5px solid rgba(122, 122, 122, .5);
+    border-radius: 10px;
+    margin-top: -0.9em;
+    padding-left: 0.5em;
+    background-color: #ffffff;
+}
+
+.cPPasswordField{
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.cPResetPassword{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: blue;
+    margin-top: -2.3em;
+    margin-left: 23em;
+    border-bottom: 1px solid blue;
+    display: inline-block;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.outer_aSSaveChangeBtn{
+    width: 13em;
+    height: 2.5em;
+    background-color: blue;
+    border-radius: 10px;
+    margin-top: 1em;
+    margin-left: 10em;
+    text-align: center;
+    padding-top: .7em;
+    box-shadow: 0px 5px 6px rgba(0,0,0,.5);
+    user-select: none;
+    cursor: pointer;
+}
+
+.aSSaveChangeBtn{
+    background: none;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.outer_aSCancelBtn{
+    width: 10em;
+    height: 2.5em;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: -3.2em;
+    margin-left: 24.5em;
+    text-align: center;
+    padding-top: .7em;
+    box-shadow: 0px 5px 6px rgba(0,0,0,.5);
+    user-select: none;
+    cursor: pointer;
+}
+
+.aSCancelBtn{
+    background: none;
+    outline: none;
+    border: none;
+    color: #1b1b1b;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* //////////////////////////////////////////////////////////////// De-activate Your Account*/
+.deactivateAccount{
+    height: 10em;
+    width: 75em;
+    box-shadow: 0px 150px 190px 5px #ffffff inset,
+                0px 4px 5px rgba(0, 0, 0, .4);
+    border-radius: 15px;
+    margin-left: 10em;
+    margin-top: 1.2em;
+}
+
+.deactivateAccountImg{
+    width: 2em;
+    height: 2em;
+    margin-top: 1em;
+    margin-left: 2.5em;
+    border-radius: 0;
+}
+
+.deactivateAccountName{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    color: #292727;
+    margin-left: 3.8em;
+    margin-top: -1.25em;
+    user-select: none;
+}
+
+.deactAccText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    color: #292727;
+    margin-left: 4.6em;
+    margin-top: 2em;
+    user-select: none;
+}
+
+.outer_deactAccButton{
+    background-color: #ffffff;
+    width: 7em;
+    height: 2.6em;
+    margin-left: 28em;
+    margin-top: -2.2em;
+    user-select: none;
+    cursor: pointer;
+    border: 2px solid blue;
+    border-radius: .7em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .4);
+}
+
+.deactAccButton{
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: .8em;
+    user-select: none;
+    cursor: pointer;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* ////////////////////////////////////////////////////////////////  Old Reset Password */
+.outer-aSResetPassword{
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    user-select: none;
+    overflow: hidden;
+}
+
+.aSResetPassBox{
+    position: absolute;
+    background-color: #ffffff;
+    width: 30em;
+    height: 17.5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 14px;
+}
+
+.aSChangePassTitle{
+    color: #362950;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 1em;
+    text-align: center;
+    user-select: none;
+}
+
+.aSChangePassImg{
+    width: 1.8em;
+    height: 1.8em;
+    cursor: pointer;
+    margin-top: -3.5em;
+    margin-left: 27.25em;
+    border-radius: 0;
+}
+
+.aSVerifyPassText{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 1.4em;
+    margin-left: 2em;
+}
+
+.outer_cPChangePassField{
+    position: relative;
+    width: 25em;
+    height: 3.2em;
+    /* border: 1.5px solid rgba(122, 122, 122, 0.5); */
+    border: 1.5px solid blue;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-left: 2.4em;
+}
+
+.cPChangePassField{
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    width: 97%;
+    height: 100%;
+    border-radius: 8px;
+    left: .6em;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aSChangePass{
+    position: absolute;
+    color: rgba(122, 122, 122, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    left: 1em;
+    top: -.1em;
+    pointer-events: none;
+    transition: all .25s linear;
+}
+
+.cPChangePassField:focus ~ .aSChangePass,
+.cPChangePassField:valid ~ .aSChangePass{
+    background-color: #ffffff;
+    padding: 5px;
+    color: blue;
+    font-size: 13px;
+    top: -2.1em;
+    border-radius: 10px;
+}
+
+/* ////////////////////////////EYE */
+.outer_aSEye{
+    position: absolute;
+    margin-left: 23em;
+    margin-top: .3em;
+    cursor: pointer;
+}
+
+.outer_aSNEye1{
+    position: absolute;
+    margin-left: 23em;
+    margin-top: .3em;
+    cursor: pointer;
+}
+
+.outer_aSNEye2{
+    position: absolute;
+    margin-left: 23em;
+    margin-top: .3em;
+    cursor: pointer;
+}
+
+.outer_aSEyeOpt{
+    position: absolute;
+    margin-left: 23em;
+    margin-top: .3em;
+    cursor: pointer;
+}
+
+.aSSlash-Eye {
+    width: 15px;
+    height: 15px;
+    border: solid 1.2px #000;
+    border-radius: 75% 15%;
+    position: relative;
+    transform: rotate(45deg);
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+
+.aSSlash-Eye:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border: solid 1.2px #000;
+    border-radius: 50%;
+    left: 3.9px;
+    top: 3.9px;
+}
+
+.aSSlash-Eye:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 0;
+    border: solid 0.8px #000;
+    border-radius: 50% 5%;
+    background-color: black;
+    top: 6.5px;
+    left: -5.7px;
+    transform: rotate(180deg);
+}
+
+.aSEye {
+    width: 15px;
+    height: 15px;
+    border: solid 1.2px #000;
+    border-radius: 75% 15%;
+    position: relative;
+    transform: rotate(45deg);
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+
+.aSEye:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border: solid 1.2px #000;
+    border-radius: 50%;
+    left: 3.9px;
+    top: 3.9px;
+}
+/* ////////////////////////////// */
+
+.aSForgetPassword{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-left: 3em;
+    margin-top: .8em;
+    border-bottom: 1px solid blue;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 0;
+}
+
+.aSNextBtn{
+    width: 7em;
+    height: 1.8em;
+    background-color: blue;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 9px;
+    margin-top: -.5em;
+    margin-left: 20em;
+    text-align: center;
+    padding-top: .8em;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* ////////////////////////////////////////////////////////////////  OTP */
+.outer-aSResetPassOtp{
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    user-select: none;
+    overflow: hidden;
+}
+
+.aSResetPassOtpBox{
+    position: absolute;
+    background-color: #ffffff;
+    width: 29em;
+    height: 17.5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 14px;
+}
+
+.aSPassOtpTitle{
+    color: #362950;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 1em;
+    text-align: center;
+    user-select: none;
+}
+
+.aSVerifyOtpText{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 0em;
+    text-align: center;
+}
+
+.main_RPOtpTextField{
+    margin-left: 5.9em;
+    margin-top: 2em;
+}
+/* //////////////////////////////////// */
+.outer_RPOtpTextField1{
+    background-color: #ffffff;
+    width: 3em;
+    height: 3em;
+    border-radius: .5em;
+    border: 1px solid rgba(0, 0, 0, .4);
+    display: inline-block;
+}
+
+.RPOtpTextField1{
+    background: none;
+    outline: none;
+    border: none;
+    width: 98%;
+    height: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(14 5 73 / 79%);
+    border-radius: .4em;
+    text-align: center;
+}
+
+.RPOtpLine1{
+    position: absolute;
+    margin-top: -1em;
+    margin-left: .65em;
+    color: rgba(0, 0, 0, .4);
+    border-radius: 0;
+    pointer-events: none;
+}
+
+/* //////////////////////////////////// */
+.outer_RPOtpTextField2{
+    background-color: #ffffff;
+    width: 3em;
+    height: 3em;
+    border-radius: .5em;
+    border: 1px solid rgba(0, 0, 0, .4);
+    margin-left: 1.2em;
+    display: inline-block;
+}
+
+.RPOtpTextField2{
+    background: none;
+    outline: none;
+    border: none;
+    width: 98%;
+    height: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(14 5 73 / 79%);
+    border-radius: .4em;
+    text-align: center;
+}
+
+.RPOtpLine2{
+    position: absolute;
+    margin-top: -1em;
+    margin-left: .65em;
+    color: rgba(0, 0, 0, .4);
+    border-radius: 0;
+    pointer-events: none;
+}
+
+/* //////////////////////////////////// */
+.outer_RPOtpTextField3{
+    background-color: #ffffff;
+    width: 3em;
+    height: 3em;
+    border-radius: .5em;
+    border: 1px solid rgba(0, 0, 0, .4);
+    margin-left: 1.2em;
+    display: inline-block;
+}
+
+.RPOtpTextField3{
+    background: none;
+    outline: none;
+    border: none;
+    width: 98%;
+    height: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(14 5 73 / 79%);
+    border-radius: .4em;
+    text-align: center;
+}
+
+.RPOtpLine3{
+    position: absolute;
+    margin-top: -1em;
+    margin-left: .65em;
+    color: rgba(0, 0, 0, .4);
+    border-radius: 0;
+    pointer-events: none;
+}
+
+/* //////////////////////////////////// */
+.outer_RPOtpTextField4{
+    background-color: #ffffff;
+    width: 3em;
+    height: 3em;
+    border-radius: .5em;
+    border: 1px solid rgba(0, 0, 0, .4);
+    margin-left: 1.2em;
+    display: inline-block;
+}
+
+.RPOtpTextField4{
+    background: none;
+    outline: none;
+    border: none;
+    width: 98%;
+    height: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(14 5 73 / 79%);
+    border-radius: .4em;
+    text-align: center;
+}
+
+.RPOtpLine4{
+    position: absolute;
+    margin-top: -1em;
+    margin-left: .65em;
+    color: rgba(0, 0, 0, .4);
+    border-radius: 0;
+    pointer-events: none;
+}
+/* //////////////////////////////////// */
+
+.aSResendOtpText{
+    color:rgba(0, 0, 0, .8);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-left: 18.4em;
+    margin-top: 1em;
+    display: inline-block;
+    user-select: none;
+    border-radius: 0;
+}
+
+.outer_aSResendOtpBtn{
+    width: 9em;
+    height: 2.8em;
+    background-color: #0a0ace;
+    border-radius: 10px;
+    margin-top: .5em;
+    margin-left: 5.5em;
+    user-select: none;
+    cursor: pointer;
+}
+
+.aSResendOtpBtn{
+    width: 100%;
+    height: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    border-radius: 9px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    padding-top: 0.2em;
+    cursor: pointer;
+}
+
+.outer_aSNextOtpBtn,
+.outer_aSSubmitOtpBtn{
+    width: 7em;
+    height: 2.8em;
+    background-color: #0a0ace;
+    border-radius: 10px;
+    margin-top: -2.8em;
+    margin-left: 16.2em;
+    user-select: none;
+    cursor: pointer;
+}
+
+.aSNextOtpBtn,
+.aSSubmitOtpBtn{
+    width: 100%;
+    height: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 9px;
+    padding-top: .2em;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* ////////////////////////////////////////////////////////////////  Reset New Password */
+.outer-aSResetNewPassword{
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    user-select: none;
+    overflow: hidden;
+}
+
+.aSResetNewPassBox{
+    position: absolute;
+    background-color: #ffffff;
+    width: 30em;
+    height: 18.6em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 14px;
+}
+
+.aSNewPassTitle{
+    color: #362950;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 1em;
+    text-align: center;
+    user-select: none;
+}
+
+.outer_cPNewPassField1{
+    position: relative;
+    width: 25em;
+    height: 3.2em;
+    /* border: 1.5px solid rgba(122, 122, 122, 0.5); */
+    border: 1.5px solid blue;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-left: 2.4em;
+}
+
+.cPNewPassField1{
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    width: 97%;
+    height: 100%;
+    border-radius: 8px;
+    left: .6em;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aSNewPass1{
+    position: absolute;
+    color: rgba(122, 122, 122, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    left: 1em;
+    top: -.1em;
+    pointer-events: none;
+    transition: all .25s linear;
+}
+
+.cPNewPassField1:focus ~ .aSNewPass1,
+.cPNewPassField1:valid ~ .aSNewPass1{
+    background-color: #ffffff;
+    padding: 5px;
+    color: blue;
+    font-size: 13px;
+    top: -2.1em;
+    border-radius: 10px;
+}
+
+.outer_cPNewPassField2{
+    position: relative;
+    width: 25em;
+    height: 3.2em;
+    /* border: 1.5px solid rgba(122, 122, 122, 0.5); */
+    border: 1.5px solid blue;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-left: 2.4em;
+    margin-top: 1.7em;
+}
+
+.cPNewPassField2{
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    width: 97%;
+    height: 100%;
+    border-radius: 8px;
+    left: .6em;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aSNewPass2{
+    position: absolute;
+    color: rgba(122, 122, 122, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    left: 1em;
+    top: -.1em;
+    pointer-events: none;
+    transition: all .25s linear;
+}
+
+.cPNewPassField2:focus ~ .aSNewPass2,
+.cPNewPassField2:valid ~ .aSNewPass2{
+    background-color: #ffffff;
+    padding: 5px;
+    color: blue;
+    font-size: 13px;
+    top: -2.1em;
+    border-radius: 10px;
+}
+
+.outer_aSNSaveBtn{
+    width: 7em;
+    height: 2.7em;
+    background-color: blue;
+    border-radius: 9px;
+    margin-top: 1em;
+    margin-left: 20em;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.aSNPImg{
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    margin-top: .6em;
+    margin-left: 1.2em;
+    pointer-events: none;
+}
+
+.aSNSaveBtn{
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    cursor: pointer;
+    padding-left: 1.6em;
+}
+
+/* /////////////////////////////////////////////////////////////////////////Proceed Box*/
+.outer_deaAProceedBox{
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    border-radius: 0;
+}
+
+.deaAProceedBox{
+    position: absolute;
+    background-color: #ffffff;
+    width: 25em;
+    height: 31em;
+    border-radius: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dAAHeader{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.dAATitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: #131313;
+    text-align: left;
+    margin-top: 1.8em;
+    margin-left: 1.4em;
+}
+
+.AYAccText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #131313;
+    text-align: left;
+}
+
+.AYAccText1{
+    margin-top: 1.2em;
+    margin-left: 1.4em;
+}
+
+.AYAccText2{
+    margin-top: 1.4em;
+    margin-left: 1.4em;
+}
+
+.AYAccText3{
+    margin-top: 1.4em;
+    margin-left: 1.4em;
+}
+
+.AYAccText4{
+    margin-top: 1.4em;
+    margin-left: 1.4em;
+}
+
+.AYAccText5{
+    margin-top: 1.4em;
+    margin-left: 1.4em;
+    font-weight: bold;
+}
+
+.outer_aAAPCancelBtn{
+    position: absolute;
+    width: 7em;
+    height: 2.7em;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin-top: 1em;
+    margin-left: 8em;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .4);
+}
+
+.aAAPCancelBtn{
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    color: #000000;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    cursor: pointer;
+}
+
+.outer_aAAPDeleteBtn{
+    position: absolute;
+    width: 7em;
+    height: 2.7em;
+    background-color: blue;
+    border-radius: 12px;
+    margin-top: 1em;
+    margin-left: 16.5em;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+}
+
+.aAAPDeleteBtn{
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    cursor: pointer;
+}
+
+/*///////////////////////////// Save Changes*/
+.outer_allsavechangesbox{
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    border-radius: 0;
+}
+
+.allsavechangesbox{
+    position: absolute;
+    background-color: #ffffff;
+    width: 25.6em;
+    height: 10em;
+    border-radius: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.alleditdetails{
+    font-size: 18px;
+    color: #000000;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1.2em;
+    margin-left: 1em;
+    width: 19.4em;
+    text-align: center;
+    border: 1px solid #09096a;
+    border-radius: 12px;
+    padding: 15px 10px 15px 10px;
+}
+
+.aedCancelBtn{
+    width: 6.5em;
+    height: 1.85em;
+    background-color: blue;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 1.5em;
+    margin-left: 8em;
+    text-align: center;
+    padding-top: 0.8em;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+    user-select: none;
+    cursor: pointer;
+}
+
+.outer_allsavechangesbtn{
+    width: 7.2em;
+    height: 2.05em;
+    background-color: blue;
+    border-radius: 10px;
+    margin-top: -2.8em;
+    margin-left: 16.7em;
+    text-align: center;
+    padding-top: .75em;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+    user-select: none;
+    cursor: pointer;
+}
+
+.allsavechangesbtn{
+    background: none;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*//////////////////////////////////////////*/
+
+/* //////////////////////////////////////////////////////////////////////EYE */
+
+.pslash-eye {
+    width: 12px;
+    height: 12px;
+    border: solid 1.2px #000;
+    border-radius: 75% 15%;
+    position: relative;
+    transform: rotate(45deg);
+    display: inline-block;
+}
+
+.pslash-eye:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border: solid 1.2px #000;
+    border-radius: 50%;
+    left: 2.5px;
+    top: 2.5px;
+}
+
+.pslash-eye:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 0;
+    border: solid 0.8px #000;
+    border-radius: 50% 5%;
+    background-color: black;
+    top: 5.4px;
+    left: -5.6px;
+    transform: rotate(160deg);
+}
+
+.peye {
+    width: 12px;
+    height: 12px;
+    border: solid 1.2px #000;
+    border-radius: 75% 15%;
+    position: relative;
+    transform: rotate(45deg);
+    display: inline-block;
+}
+
+.peye:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border: solid 1.2px #000;
+    border-radius: 50%;
+    left: 2.5px;
+    top: 2.5px;
+}
+
+.fas {
+    margin-right: 10px;
+    margin-top: 12px;
+}
+
+.pfas {
+    margin-right: -300px;
+    margin-top: -33px;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////// */

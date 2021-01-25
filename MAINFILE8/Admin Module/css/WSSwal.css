@@ -1,0 +1,94 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+            
+.wsmodal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+    user-select: none;
+}
+
+.wsmodal-content {
+    position: absolute;
+    background-color: #fefefe;
+    margin: auto;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid #888;
+    width: 460px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wscircle-loader {
+    /*border: 4px solid #a5dc86;*/
+    border: 14px solid white;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 50%;
+    height: 5em; 
+    width: 5em; 
+    border-top: 0.9em solid yellow;
+    border-bottom: 0.9em solid yellow;
+    animation: spin 1.6s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.sandclock{
+    position: absolute;
+    width:50px;
+    height:50px;
+    margin-left: 1.8em;
+    margin-top: 1.85em;
+}
+
+.wstitle-text{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(59, 56, 56);
+}
+
+.wsinfo-text{
+    font-size: 17px;
+    color: rgb(124, 116, 116);
+}
+/*
+.wsok-content-block {
+    margin-right: 13px;
+    background-color: #7cd1f9;
+    padding-top: 12px;
+    width: 70px;
+    height:30px;
+    border-radius: 5px;
+    border: 1px solid rgb(198, 209, 189);
+    float: right;
+}
+
+.wsok-text {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.wsok-text:hover,
+.wsok-text:focus, 
+.wsok-content-block:hover,
+.wsok-content-block:focus{
+    cursor: pointer;
+}*/

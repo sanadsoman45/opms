@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
+
+html{
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+.outer-DetailsBox{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    user-select: none;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+.main-DetailsBox{
+    position: absolute;
+    background-color: #ffffff;
+    width: 24em;
+    height: 29em;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-DetailsBox::before{
+    content: "";
+    position: absolute;
+    top: -1.75em;
+    left: 1.75em;
+    border-right: 7.5em solid #ffffff;
+    border-bottom: 11em solid #6c55fa;
+    transform: rotate(90deg);
+    border-radius: 0px 0px 0px 15px;
+    z-index: -1;
+}
+
+.main-DetailsBox::after{
+    content: "";
+    position: absolute;
+    top: 9.75em;
+    left: 4.75em;
+    border-right: 15em solid #ffffff;
+    border-bottom: 23.5em solid #6c55fa;
+    transform: rotate(270deg);
+    border-radius: 4px 0px 0px 15px;
+    z-index: -1;
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+.detailsHeader{
+    color: rgb(1, 1, 48);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    margin-top: .6em;
+    font-weight: bold;
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+.closeDetails{
+    width: 2em;
+    height: 2em;
+    margin-top: -2em;
+    margin-left: 21.1em;
+    cursor: pointer;
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+.userNameDetail{
+    background-color: #ffffff;
+    width: 19em;
+    height: 2.7em;
+    border-radius: 7px;
+    border: 2px solid rgb(6 6 106);
+    margin-top: 2em;
+    margin-left: 2.2em;
+}
+
+.userNameDetail::before{
+    position: absolute;
+    content: "Username";
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: rgb(1, 1, 48);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 5.1em;
+    left: 3.5em;
+    padding: 2px 4px 2px 4px;
+}
+
+.setUserName{
+    color: rgb(1, 1, 48);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 16.9em;
+    text-align: center;
+    margin-top: .7em;
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+.userIdDetail{
+    background-color: #ffffff;
+    width: 19em;
+    height: 2.7em;
+    border-radius: 7px;
+    border: 2px solid rgb(6 6 106);
+    margin-top: 2em;
+    margin-left: 2.2em;
+}
+
+.userIdDetail::before{
+    position: absolute;
+    content: "Roll/ID No.";
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: rgb(1, 1, 48);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 10.55em;
+    left: 3.5em;
+    padding: 2px 4px 2px 4px;
+}
+
+.setuserId{
+    color: rgb(1, 1, 48);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 16.9em;
+    text-align: center;
+    margin-top: .7em;
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+.grNumDetail{
+    background-color: #ffffff;
+    width: 19em;
+    height: 2.7em;
+    border-radius: 7px;
+    border: 2px solid rgb(6 6 106);
+    margin-top: 2em;
+    margin-left: 2.2em;
+}
+
+.grNumDetail::before{
+    position: absolute;
+    content: "GR No.";
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: rgb(1, 1, 48);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 16.2em;
+    left: 3.5em;
+    padding: 2px 4px 2px 4px;
+}
+
+.setGrNum{
+    color: rgb(1, 1, 48);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 16.9em;
+    text-align: center;
+    margin-top: .7em;
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+.emailIdDetail{
+    background-color: #ffffff;
+    width: 19em;
+    height: 2.7em;
+    border-radius: 7px;
+    border: 2px solid rgb(6 6 106);
+    margin-top: 2em;
+    margin-left: 2.2em;
+}
+
+.emailIdDetail::before{
+    position: absolute;
+    content: "Email ID";
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: rgb(1, 1, 48);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 21.85em;
+    left: 3.5em;
+    padding: 2px 4px 2px 4px;
+}
+
+.setEmailId{
+    color: rgb(1, 1, 48);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 16.9em;
+    text-align: center;
+    margin-top: .7em;
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+.numberDetail{
+    background-color: #ffffff;
+    width: 19em;
+    height: 2.7em;
+    border-radius: 7px;
+    border: 2px solid rgb(6 6 106);
+    margin-top: 2em;
+    margin-left: 2.2em;
+}
+
+.numberDetail::before{
+    position: absolute;
+    content: "Number";
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: rgb(1, 1, 48);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 27.5em;
+    left: 3.5em;
+    padding: 2px 4px 2px 4px;
+}
+
+.setNumber{
+    color: rgb(1, 1, 48);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 16.9em;
+    text-align: center;
+    margin-top: .7em;
+}

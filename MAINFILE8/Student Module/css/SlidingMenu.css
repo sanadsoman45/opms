@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
+
+.outer-slidingMenu{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+    user-select: none;
+}
+
+.slidingMenu{
+    position: fixed;
+    background-color: #ffffff;
+    width: 23em;
+    height: 45em;
+    /* height: 41.5em; */
+    z-index: 1;
+    user-select: none;
+    margin-top: 60px;
+    margin-left: -368px;
+    transition: 800ms;
+}
+
+.logo-outer-circle{
+    position:fixed;
+    background: none;
+    border: none;
+    width: 92px;
+    height: 93px;
+    margin-top: 65px;
+    margin-left: 140px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 30px #664d99;
+}
+
+.logo{
+    position: fixed;
+    width: 115px;
+    height: 115px;
+    margin-top: -9px;
+    margin-left: -11px;
+}
+
+.pmsName{
+    font-size: 25px;
+    font-weight: bold;
+    position: fixed;
+    margin-top: 7.6em;
+    margin-left: 2.3em;
+    width : 250px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.menuItem{
+    position: fixed;
+    background-color: #241D52;
+    width: 368px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.uPName{
+    position: fixed;
+    color: #ffffff;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 19px;
+    font-family: sans-serif;
+}
+
+.arrow{
+    margin-left: 320px;
+    margin-top: 28px;
+}
+
+.arrow1{
+    background-color: #ffffff;
+    width: 20px;
+    height: 4px;
+    transform: rotate(40deg);
+}
+
+.arrow2{
+    background-color: #ffffff;
+    width: 20px;
+    height: 4px;
+    transform: rotate(312deg);
+    margin-left: 1px;
+    margin-top: 7px;
+}
+
+/*.chats{
+    position: fixed;
+    margin-top: 308px;
+}*/
+
+.stagesInstru{
+    position: fixed;
+    margin-top: 308px;
+}
+
+.visitCollegeSite{
+    position: fixed;
+    margin-top: 379px;
+}
+
+.darkMode{
+    position: fixed;
+    margin-top: 449.5px;
+}
+
+.finalizeProject{
+    position: fixed;
+    margin-top: 520px;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+.darkSlider {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 17.5em;
+    margin-top: 1.15em;
+}
+  
+.darkCheckbox { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.darkToNormal {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+  
+.darkToNormal::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+  
+.darkCheckbox:checked + .darkToNormal {
+    background-color: #2196F3;
+}
+  
+.darkCheckbox:checked + .darkToNormal:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+.bluePartIncrease{
+    position: fixed;
+    background-color: #241D52;
+    width: 368px;
+    height: 200px;
+    margin-top: 36.95em;
+}

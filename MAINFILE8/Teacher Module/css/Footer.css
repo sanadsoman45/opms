@@ -1,0 +1,234 @@
+.footer{
+    background-color: #593EFF;
+    width: 100vw;
+    height: 27em;
+    margin-top: 48px;
+    padding: 1px;
+}
+
+.logo-outer-circle0{
+    background-color: white;
+    border: none;
+    width: 70px;
+    height: 70px;
+    margin-top: 50px;
+    margin-left: 8em;
+    border-radius: 100px;
+    box-shadow: 0px 0px 20px #2f2249;
+}
+
+.logo0{
+    width: 85px;
+    height: 85px;
+    margin-top: -7px;
+    margin-left: -7.9px;
+}
+
+.pmsName0{
+    font-size: 17px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 1em;
+    margin-left: .7em;
+    width: 18em;
+    font-family: 'Geo', sans-serif;
+}
+
+
+.outer-main{
+    margin-top: -8.4em;
+    margin-left: 17.8em;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.main{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.home0{
+    display: inline-block;
+    font-size: 15px;
+    color: #ede9e9;
+    margin-top: 18px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.myProject0{
+    display: inline-block;
+    font-size: 15px;
+    color: #ede9e9;
+    font-family: sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+.aboutUs0{
+    display: inline-block;
+    font-size: 15px;
+    color: #ede9e9;
+    font-family: sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.faqs0{
+    display: inline-block;
+    font-size: 15px;
+    color: #ede9e9;
+    font-family: sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.outer-resources{
+    margin-top: -7.8em;
+    margin-left: 37em;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.resources{
+    font-size: 20px;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contactUs{
+    display: inline-block;
+    font-size: 15px;
+    color: #ede9e9;
+    font-family: sans-serif;
+    margin-top: 18px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.blog{
+    display: inline-block;
+    font-size: 15px;
+    color: #ede9e9;
+    font-family: sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.outer-legal{
+    margin-top: -6em;
+    margin-left: 56em;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.legal{
+    font-size: 20px;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.termsOfUse{
+    display: inline-block;
+    font-size: 15px;
+    color: #ede9e9;
+    font-family: sans-serif;
+    margin-top: 18px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.privacyPolicy{
+    display: inline-block;
+    font-size: 15px;
+    color: #ede9e9;
+    font-family: sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.outer-social{
+    margin-top: -6em;
+    margin-left: 74em;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.social{
+    font-size: 20px;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.facebook{
+    display: inline-block;
+    font-size: 15px;
+    color: #ede9e9;
+    font-family: sans-serif;
+    margin-top: 18px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.instagram{
+    display: inline-block;
+    font-size: 15px;
+    color: #ede9e9;
+    font-family: sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.twitter{
+    display: inline-block;
+    font-size: 15px;
+    color: #ede9e9;
+    font-family: sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.linkedIn{
+    display: inline-block;
+    font-size: 15px;
+    color: #ede9e9;
+    font-family: sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dotted-line{
+    border: 1.4px dashed #ffffff;
+    width: 91vw;
+    margin-top: 10em;
+    margin-left: 4em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dataBase{
+    font-size: 15px;
+    color: #ede9e9;
+    font-family: sans-serif;
+    margin-top: 18px;
+    margin-left: 69px;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+}

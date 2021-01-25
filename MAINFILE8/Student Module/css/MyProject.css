@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
+
+html{
+    scrollbar-width: none;
+}
+
+body {
+    margin:0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url(tech_img_10.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+input:invalid {
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear {
+  display: none;
+}
+/* //////////////////////////////////////////////////////////////// Project Details*/
+.projectDetails{
+    top: 5em;
+    height: 25.5em;
+    width: 68em;
+    box-shadow: 0px 220px 200px 0px #ffffff inset,
+                0px -50px 400px 0px #ffffff inset;
+    border-radius: 15px;
+    margin-left: 14.4em;
+    margin-top: 3.5em;
+}
+
+/* //////////////////////////////////////// */
+.projectDetailsImg{
+    width: 2.4em;
+    height: 2.4em;
+    margin-top: .8em;
+    margin-left: 2.5em;
+    border-radius: 0;
+}
+
+.projectDetailsName{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    color: #323030;
+    margin-left: 3.9em;
+    margin-top: -1.35em;
+    user-select: none;
+}
+
+/* //////////////////////////////////////////Project Name */
+.outer_pDProjectName{
+    margin-left: 3.7em;
+    margin-top: -1em;
+    display: inline-block;
+}
+
+.pDProjectName{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #323030;
+}
+
+.outer_pDProjectNameField{
+    width: 29em;
+    height: 2.8em;
+    border: 1.5px solid blue;
+    border-radius: 10px;
+    margin-top: -0.9em;
+    padding-left: 0.5em;
+    background-color: #ffffff;
+}
+
+.pDProjectNameField{
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/*///////////////////////////////////Select Project  */
+.outer_pDSelectProject{
+    position: absolute;
+    margin-left: 1.6em;
+    margin-top: -1em;
+    display: inline-block;
+}
+.pDSelectProject{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #323030;
+    margin-left: .2em;
+}
+.outer_SelProDropdown{
+    width: 29em;
+    height: 2.8em;
+    border: 1.5px solid blue;
+    border-radius: 10px;
+    margin-top: -0.9em;
+    padding-left: 0.3em;
+    background-color: #ffffff;
+}
+
+.SelProDropdown{
+    height: 100%;
+    width: 100%;
+    padding-left: .3em;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    transition: .4s;
+    -webkit-appearance:none;
+}
+
+.SelProDropdown:invalid {
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.dLArrow{
+    margin-top: -2.7em;
+    margin-left: 26.3em;
+    pointer-events: none;
+}
+
+.downArrow2{
+    width: 18px;
+    height: 20px;
+    background-color: #ffffff;
+    padding: .7em;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.outer_SelProDropdown label{
+    position:absolute;
+    pointer-events: none;
+    color: #c4bbbb;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .4s;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.SelProDropdown:focus~label,
+.SelProDropdown:valid~label{
+    background:white;
+    font-size:16px;
+    color:blue;
+    margin-top: -21px;
+}
+
+/* ////////////////////////////////// Description Of Project*/
+.outer_pDDescriPro{
+    margin-left: 3.7em;
+    margin-top: -.2em;
+}
+
+.pDDescriProName{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #323030;
+}
+
+.outer_pDDescriProTextarea{
+    width: 29.5em;
+    height: 9em;
+    border-radius: .7em;
+    border: 1.5px solid blue;
+    background-color: #ffffff;
+    margin-top: -.9em;
+}
+
+.pDDescriProTextarea{
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 91%;
+    border-radius: .7em;
+    margin-top: .7em;
+    padding-left: 1em;
+    padding-right: .5em;
+    font-size: 20px;
+    resize: none;
+    scrollbar-width: none;
+}
+
+.pDCountChar{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.4);
+    margin-top: -8.4em;
+    margin-left: 24em;
+}
+
+/* //////////////////////////////////////////Project Type */
+.outer_pDProjectType{
+    margin-left: 35em;
+    margin-top: -11.6em;
+    display: inline-block;
+}
+
+.pDProjectType{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #323030;
+}
+
+.outer_pDProjectTypeField{
+    width: 29em;
+    height: 2.8em;
+    border: 1.5px solid blue;
+    border-radius: 10px;
+    margin-top: -0.9em;
+    padding-left: 0.5em;
+    background-color: #ffffff;
+}
+
+.pDProjectTypeField{
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/* ///////////////////////////////////// View Project*/
+.outer_pDViewProj{
+    margin-left: 3.7em;
+    margin-top: .8em;
+}
+
+.pDViewProj_Text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    display: inline-block;
+}
+
+.outer_pDViewProjBtn{
+    display: inline-block;
+    background-color: #ffffff;
+    width: 10.5em;
+    height: 2.6em;
+    border-radius: 1.5em;
+    margin-left: 4em;
+    border: 2px solid blue;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, .5);
+}
+
+.pDViewProjBtn{
+    background: none;
+    outline: none;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5em;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* //////////////////////////////////////////////////////////////// Delete Your Accout*/
+.deleteYourAccout{
+    top: 5em;
+    height: 8.2em;
+    width: 68em;
+    box-shadow: 0px 80px 100px 1px #ffffff inset,
+                0px 0px 150px #ffffff inset;
+    border-radius: 15px;
+    margin-left: 14.4em;
+    margin-top: 1.2em;
+}
+
+/* //////////////////////////////////////////// */
+.delYourAccImg{
+    width: 2.4em;
+    height: 2.4em;
+    margin-top: .7em;
+    margin-left: 2em;
+    border-radius: 0;
+}
+
+.delYourAccName{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    color: #323030;
+    margin-left: 3.4em;
+    margin-top: -1.35em;
+    user-select: none;
+}
+
+/* //////////////////////////////////////////// */
+.outer_dYADeleteProj{
+    margin-top: -.8em;
+    margin-left: 2.9em;
+}
+
+.dYADeleteProjText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17.5px;
+    font-weight: bold;
+    color: #000000;
+    display: inline-block;
+}
+
+.outer_dYADeleteProjBtn{
+    display: inline-block;
+    background-color: #ffffff;
+    width: 7.5em;
+    height: 2.6em;
+    border-radius: 1.5em;
+    margin-left: 2em;
+    border: 2px solid blue;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, .5);
+}
+
+.dYADeleteProjBtn{
+    background: none;
+    outline: none;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    color: blue;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5em;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* ////////////////////////////////////////////////////////////////////// Save Changes Button */
+.outer_pDSaveChangesBtn{
+    width: 13em;
+    height: 2.5em;
+    background-color: blue;
+    border-radius: 10px;
+    margin-top: 1.2em;
+    margin-left: 14.4em;
+    text-align: center;
+    padding-top: .7em;
+    box-shadow: 0px 5px 6px rgba(0,0,0,.5);
+    user-select: none;
+    cursor: pointer;
+}
+
+.pDSaveChangesBtn{
+    background: none;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// Delete Box*/
+.outer_MYDeleteBox{
+    display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    user-select: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.MYDeleteBox{
+    position: absolute;
+    background-color: #ffffff;
+    width: 25.5em;
+    height: 26em;
+    border-radius: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mYDeleteBoxHeader{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+.mYDeleteBoxTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1c1a1a;
+    text-align: left;
+    margin-left: 1em;
+    width: 20em;
+}
+
+.mYDeleteBoxTitle1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #1c1a1a;
+    text-align: left;
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+    width: 20em;
+}
+
+.mYDeleteBoxTitle2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #1c1a1a;
+    text-align: left;
+    margin-left: 1.5em;
+    width: 20em;
+}
+
+.mYDeleteBoxFooter{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1c1a1a;
+    text-align: left;
+    margin-left: 1em;
+    margin-top: 1.4em;
+    width: 19.5em;
+}
+
+.outer_mYDBCancelBtn{
+    width: 8em;
+    height: 2.2em;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 1.9em;
+    margin-left: 6em;
+    text-align: center;
+    padding-top: .7em;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+    user-select: none;
+    cursor: pointer;
+}
+
+.mYDBCancelBtn{
+    background: none;
+    outline: none;
+    border: none;
+    color: #000000;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+
+.outer_mYDBDeleteBtn{
+    width: 8em;
+    height: 2.2em;
+    background-color: blue;
+    border-radius: 10px;
+    margin-top: -2.9em;
+    margin-left: 15.5em;
+    text-align: center;
+    padding-top: .7em;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+    user-select: none;
+    cursor: pointer;
+}
+
+.mYDBDeleteBtn{
+    background: none;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// Save Changes Box*/
+.outer_MYSaveChangesBox{
+    display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    user-select: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.mYSaveChangesBox{
+    position: absolute;
+    background-color: #ffffff;
+    width: 25.5em;
+    height: 14em;
+    border-radius: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mYSaveChangesBoxHeader{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+.mYSaveChangesBoxText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #1c1a1a;
+    text-align: left;
+    margin-left: 1.8em;
+    margin-top: 1.6em;
+    width: 21em;
+}
+
+.outer_mYSCBSaveBtn{
+    width: 8em;
+    height: 2.2em;
+    background-color: blue;
+    border-radius: 10px;
+    margin-top: 1.9em;
+    margin-left: 6em;
+    text-align: center;
+    padding-top: .7em;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+    user-select: none;
+    cursor: pointer;
+}
+
+.mYSCBSaveBtn{
+    background: none;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.outer_mYSCBCancelBtn{
+    width: 8em;
+    height: 2.2em;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: -2.9em;
+    margin-left: 15.5em;
+    text-align: center;
+    padding-top: .7em;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+    user-select: none;
+    cursor: pointer;
+}
+
+.mYSCBCancelBtn{
+    background: none;
+    outline: none;
+    border: none;
+    color: #000000;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}

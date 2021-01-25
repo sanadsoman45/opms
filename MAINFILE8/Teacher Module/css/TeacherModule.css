@@ -1,0 +1,405 @@
+body{
+    overflow-x: hidden;
+}
+
+.outer_TMSelectStages{
+    display: inline-block;
+    margin-top: 3.5em;
+    margin-left: 2em;
+    width: 9.5em;
+    height: 2em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.TMSelectStagesText{
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.TM_down_arrow{
+    width: 1em;
+    height: 1em;
+    margin-top: -2.2em;
+    margin-left: 9.5em;
+}
+
+.TMSelectStagesLine{
+    border-left: 10.5em solid black;
+    height: 1px;
+    margin-top: -.5em;
+}
+
+.outer_TMAllStages{
+    display: none;
+    background-color: #ffffff;
+    width: 10.5em;
+    height: 22.6em;
+    position: absolute;
+    box-shadow: 0px 0px 5px #000000;
+    margin-top: 0.1em;
+    z-index: 1;
+    transition: all 1s linear;
+}
+
+.TMAllStages{
+    color: #26a69a;
+    font-size: 19px;
+    padding: 10px;
+    z-index: 1;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.outer_TMSearchBox{
+    display: inline-block;
+    margin-left: 2em;
+}
+
+.outer_TMSearchTextField{
+    border-bottom: 1px solid black;
+    width: 25em;
+    height: 2.1em
+}
+
+.TMSearchTextField{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.outer_pagination{
+    margin-top: 2em;
+}
+
+table{
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #242222;
+    font-size: 17px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+td,
+th{
+    padding: 15px;
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+td{
+    color: #323030;
+}
+
+.outer_TMDownloadBtn{
+    width: 6.5em;
+    height: 2.5em;
+    background-color: #3d3deb;
+    border-radius: 12px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, .5);
+    margin-left: 0.5em;
+}
+
+.TMDownloadBtn{
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    cursor: pointer;
+}
+
+.thDescription{
+    width: 10em;
+    cursor: pointer;
+    user-select: none;
+}
+.TdownArrow{
+    display: inline;
+    width: 1em;
+    height: 1em;
+    margin-top: -1em;
+    transform: rotate(0deg);
+}
+
+.TMcorrect,
+.projCompleted{
+    width: 2.5em;
+    height: 2.5em;
+    cursor: pointer;
+    margin-right: .5em;
+}
+
+.TMquit{
+    width: 2.5em;
+    height: 2.5em;
+    cursor: pointer;
+}
+
+.outer_TMnextPage{
+    position: relative;
+    text-align: center;
+    margin-top: 2em;
+    user-select: none;
+}
+
+.TMnextPage1{
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    transform: rotate(180deg);
+    margin-left: -4.5em;
+}
+
+.TMbackPage2{
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    margin-left: 4.5em;
+}
+
+.TMPage{
+    position: absolute;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 16px;
+    border-radius: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: -.25em;
+    cursor: pointer;
+}
+
+.TMOnePage{
+    margin-left: -2.7em;
+    background-color: #ee6e73;
+    color: #ffffff;
+}
+
+.TMTwoPage{
+    margin-left: -.3em;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.TMThreePage{
+    margin-left: 2.1em;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/*///////////////////////////////////////////////////////////////////*/
+.pagination_nums{
+    margin-top: 4em;
+    text-align: center;
+}
+
+.pagination_nav_btn{
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: #ffffff;
+    color: #337ab7;
+    cursor:pointer;
+    border: .5px solid grey;
+    border-left: 0px solid grey;
+}
+.pagination_link{
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: #ffffff;
+    color: #337ab7;
+    cursor:pointer;
+    border: .5px solid grey;
+    border-left: 0px solid grey;
+}
+.admin_email{
+    color: blue;
+    cursor: pointer;
+}
+/*///////////////////////////////////////////////////////////////*/
+.outer_addalldata{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    user-select: none;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+}
+
+.addalldata{
+    position: absolute;
+    background-color: #ffffff;
+    width: 27em;
+    height: 10.5em;
+    border-radius: 15px;
+    padding-top: 1px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.alldeletemess{
+    font-size: 18px;
+    color: #000000;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1.2em;
+    margin-left: 1.1em;
+    width: 20.5em;
+    text-align: center;
+    border: 1px solid #09096a;
+    border-radius: 12px;
+    padding: 15px 10px 15px 10px;
+}
+
+.aadCancelBtn{
+    width: 7em;
+    height: 1.8em;
+    background-color: blue;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 8em;
+    text-align: center;
+    padding-top: .8em;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+    user-select: none;
+    cursor: pointer;
+}
+
+.same_iadaase{
+    width: 7.2em;
+    height: 2.8em;
+    background-color: blue;
+    border-radius: 10px;
+    margin-top: -2.8em;
+    margin-left: 18em;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+    user-select: none;
+    cursor: pointer;
+}
+
+.iadaase{
+    background: none;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+/*///////////////////////////////////////////////////////////////*/
+.outer_compProje{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    user-select: none;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+}
+
+.compProje{
+    position: absolute;
+    background-color: #ffffff;
+    width: 27em;
+    height: 11.5em;
+    border-radius: 15px;
+    padding-top: 1px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.allstagesrigh{
+    font-size: 18px;
+    color: #000000;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1.2em;
+    margin-left: 1.1em;
+    width: 20.5em;
+    text-align: center;
+    border: 1px solid #09096a;
+    border-radius: 12px;
+    padding: 17px 11px 17px 11px;
+}
+
+.asrCancelBtn{
+    width: 7em;
+    height: 1.8em;
+    background-color: blue;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 8em;
+    text-align: center;
+    padding-top: .8em;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+    user-select: none;
+    cursor: pointer;
+}
+
+.same_asrcb{
+    width: 7.2em;
+    height: 2.8em;
+    background-color: blue;
+    border-radius: 10px;
+    margin-top: -2.8em;
+    margin-left: 18em;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+    user-select: none;
+    cursor: pointer;
+}
+
+.asrcb{
+    background: none;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}

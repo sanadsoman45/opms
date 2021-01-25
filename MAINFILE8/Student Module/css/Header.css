@@ -1,0 +1,112 @@
+body {
+    margin:0;
+}
+
+.header{
+    position: fixed;
+    background-color:#241D52;
+    padding:15px;
+    padding-bottom: 24px;
+    user-select: none;
+    border-bottom: 1px solid #575269;
+    width: 100vw;
+    height: 17px;
+    z-index: 1;
+}
+
+.navigationBar{
+    background-color:#05083B;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left:17px;
+    padding-right:17px;
+    display:inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    position: fixed;
+    margin-top:-8.5px;
+}
+
+.nb1{
+    background-color:#D2D3E5;
+    height:3px;
+    width:30px;
+    margin-bottom: 6px;
+    border-radius: 10px;
+}
+
+.nb2{
+    background-color:#D2D3E5;
+    height:3.2px;
+    width:30px;
+    margin-bottom: 6px;
+    border-radius: 10px;
+}
+
+.nb3{
+    background-color:#D2D3E5;
+    height:3.2px;
+    width:30px;
+    border-radius: 10px;
+}
+
+.proTitle{
+    display:inline-block;
+    font-size:25px;
+    color:#ffffff;
+    margin-left:89px;
+    font-family: 'Geo', sans-serif;
+    position: fixed;
+}
+
+.nbItems{
+    display:inline-block;
+    position: fixed;
+    margin-left:435px;
+    width:40em;
+}
+
+.nbItem{
+    display:inline-block;
+    font-size:17px;
+    color:#ffffff;
+    margin-left:40px;
+    font-family: 'Geo', sans-serif;
+    text-align: center;
+    margin-top: -2px;
+    cursor: pointer;
+}
+
+.nbIName{
+    cursor: pointer;
+}
+
+.nbIOutline{
+    background-color: aqua;
+    width: 130px;
+    height: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none;
+}
+
+.userImage{
+    border-radius: 50px;
+    background-color: #D2D3E5;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin-left: 92em;
+    margin-bottom: -22px;
+    margin-top: -7px;
+    cursor: pointer;
+    position: fixed;
+}
+
+.uImage{
+    margin-left:8px;
+    margin-top: 8px;
+    margin-bottom: -12px;
+    height:25px; 
+    width:25px;
+}

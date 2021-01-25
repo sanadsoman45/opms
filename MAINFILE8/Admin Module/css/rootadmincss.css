@@ -1,0 +1,20 @@
+table,th,td
+{
+	border-collapse: collapse;
+}
+td
+{
+	border-top:none;
+	border-bottom: none;
+}
+
+.table{
+	border-style: none;
+	border-spacing: 0;
+}
+
+.tbody{
+	border-style: none;
+	border-spacing: 0;
+	border-collapse: collapse;
+}

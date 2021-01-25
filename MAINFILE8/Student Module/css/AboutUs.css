@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
+
+html{
+    scrollbar-width: none;
+}
+
+body {
+    margin:0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.aboutUsBluePart{
+    position: relative;
+    background-color: #593EFF;
+    width: 100vw;
+    height: 20em;
+}
+
+.aboutUsHeader{
+    position: absolute;
+    color: #ffffff;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 34.15em;
+    margin-top: 2.5em;
+    text-align: center;
+}
+
+.aboutUsBox{
+    position:absolute;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+.box1{
+    position: absolute;
+    background-color: #ffffff;
+    width: 20em;
+    height: 22em;
+    box-shadow: 0px 5px 5px #5f5757;
+    margin-top: -6em;
+    margin-left: 5em;
+    border-radius: 15px;
+    transition: height 0.5s;
+}
+
+.aboutUsImage{
+    width: 18.5em;
+    height: 10em;
+    border-radius: 15px;
+    margin-left: 11px;
+    margin-top: 10px;
+    border: 1px solid #000000;
+}
+
+.whoWeAre{
+    font-size: 22px;
+    color: #302d2d;
+    width: 14.55em;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.7em;
+}
+
+.aboutUsText1{
+    font-size: 20px;
+    color: #575151;
+    width: 13.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.7em;
+    margin-left: 1.05em;
+    background-color: #ffffff;
+    overflow: hidden;
+    scrollbar-width: none;
+    height: 3.5em;
+    transition: height 0.5s;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.aUDot1{
+    position:absolute;
+    font-size: 20px;
+    color: #575151;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    margin-top: -2.16em;
+    margin-left: 11.9em;
+    width: 2.6em;
+}
+
+.aboutUsDownArrow1,
+.aUDArrow1{
+    width: 2em;
+    height: 2em;
+    margin-left: 9.3em;
+    margin-top: -.5em;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.aUDArrow1{
+    display: none;
+    transform: rotate(180deg);
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+.box2{
+    position: absolute;
+    background-color: #ffffff;
+    width: 20em;
+    height: 22em;
+    box-shadow: 0px 5px 5px #5f5757;
+    margin-top: -6em;
+    margin-left: 38em;
+    border-radius: 15px;
+    transition: height 0.5s;
+}
+
+.visionImage{
+    width: 18.5em;
+    height: 10em;
+    border-radius: 15px;
+    margin-left: 11px;
+    margin-top: 10px;
+    border: 1px solid #000000;
+}
+
+.whatWeWant{
+    font-size: 22px;
+    color: #302d2d;
+    width: 14.55em;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.7em;
+}
+
+.visionText1{
+    font-size: 20px;
+    color: #575151;
+    width: 13.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.7em;
+    margin-left: 1.05em;
+    background-color: #ffffff;
+    overflow: hidden;
+    scrollbar-width: none;
+    height: 3.5em;
+    transition: height 0.5s;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.vDot2{
+    position:absolute;
+    font-size: 20px;
+    color: #575151;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    margin-top: -2.16em;
+    margin-left: 12.25em;
+    width: 2.6em;
+}
+
+.visionDownArrow1,
+.visionDArrow1{
+    width: 2em;
+    height: 2em;
+    margin-left: 9.3em;
+    margin-top: -.5em;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.visionDArrow1{
+    display: none;
+    transform: rotate(180deg);
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+.box3{
+    background-color: #ffffff;
+    width: 20em;
+    height: 22em;
+    box-shadow: 0px 5px 5px #5f5757;
+    margin-top: -6em;
+    margin-left: 71em;
+    border-radius: 15px;
+    transition: height 0.5s;
+}
+
+.missionImage{
+    width: 18.5em;
+    height: 10em;
+    border-radius: 15px;
+    margin-left: 11px;
+    margin-top: 10px;
+    border: 1px solid #000000;
+}
+
+.whatWeWillAchieve{
+    font-size: 22px;
+    color: #302d2d;
+    width: 14.55em;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.7em;
+}
+
+.missionText1{
+    font-size: 20px;
+    color: #575151;
+    width: 13.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.7em;
+    margin-left: 1.05em;
+    background-color: #ffffff;
+    overflow: hidden;
+    scrollbar-width: none;
+    height: 3.5em;
+    transition: height 0.5s;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.mDot3{
+    position:absolute;
+    font-size: 20px;
+    color: #575151;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    margin-top: -2.16em;
+    margin-left: 12.5em;
+    width: 2.6em;
+}
+
+.missionDownArrow1,
+.missionDArrow1{
+    width: 2em;
+    height: 2em;
+    margin-left: 9.3em;
+    margin-top: -.5em;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.missionDArrow1{
+    display: none;
+    transform: rotate(180deg);
+}

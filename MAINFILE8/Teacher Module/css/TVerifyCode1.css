@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Noto+Sans|Open+Sans:400,700&display=swap');
+.verify-code {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    user-select: none;
+}
+
+.verify-code .contain {
+    position: absolute;
+    background-color: #fefefe;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border: 1px solid #888;
+    width: 330px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-49.7%, -50%);
+}
+
+.input-field,
+form .btn {
+    position: relative;
+    height: 50px;
+    width: 100%;
+}
+
+form .btn {
+    margin-top: 30px;
+    overflow: hidden;
+    z-index: 111;
+}
+
+input:-webkit-autofill:focus {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.input-field {
+    display: flex;
+    border-radius: 35px;
+    border: 3px solid rgb(31, 31, 228);
+    justify-content: space-between;
+}
+
+.input-field .textbox {
+    height: 100%;
+    width: 100%;
+    border: 1px solid silver;
+    padding-left: 15px;
+    outline: none;
+    font-size: 19px;
+    transition: .4s;
+    border: none;
+}
+
+.input-field label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    pointer-events: none;
+    color: grey;
+    font-size: 18px;
+    transition: .4s;
+}
+
+input.textbox:focus~label,
+input.textbox:valid~label {
+    transform: translateY(-33px);
+    background: white;
+    font-size: 15px;
+    color: rgb(31, 31, 228);
+    ;
+}
+
+.btn:hover .inner {
+    left: 0;
+}
+
+.btn .inner {
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    left: -100%;
+    z-index: -1;
+    transition: all .4s;
+    background-color: rgb(31, 31, 228);
+}
+
+.btn .verify-btn {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}

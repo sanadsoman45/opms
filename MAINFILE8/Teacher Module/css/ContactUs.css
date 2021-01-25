@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
+
+html{
+    scrollbar-width: none;
+}
+
+body {
+    margin:0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url(bgContactUs.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.outer_ContactUsBox{
+    position: absolute;
+    background-color: #ffffff;
+    width: 85em;
+    height: 38em;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 3.5em;
+    margin-bottom: 3.5em;
+    border-radius: 15px;
+    user-select: none;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.7);
+}
+
+.outer_cuCollMap{
+    margin-left: 4.2em;
+    margin-top: 4em;
+}
+
+.contactUsHeader{
+    color: #000000;
+    font-size: 60px;
+    font-family: 'Aladin';
+    text-align: center;
+}
+
+.cuCollMapHeader{
+    color: #000000;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    width: 24.8em;
+}
+
+.cuCollMapBox{
+    width: 34em;
+    height: 20em;
+    border: 1.5px solid gray;
+    border-radius: 12px;
+}
+
+.cuGoogleMap{
+    width: 34em;
+    height:19.95em;
+    margin-top: 0.05em;
+    border-radius: 12px;
+}
+
+.cUVerticalLine{
+    border-left: 3px solid gray;
+    height: 30em;
+    margin-top: -26em;
+    margin-left: 42.5em;
+}
+
+.outer_cuCollDetails{
+    margin-left: 45em;
+    margin-top: -30.5em;
+}
+
+.cuCollDetailsHeader{
+    color: #000000;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight: bold;
+}
+
+.cuCollDetailsPhoneNum{
+    color: #000000;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.cuCollDetailsEmail{
+    color: #000000;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.cuCollDetailsAddress{
+    color: #000000;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.cUHorizontalLine{
+    border-top: 3px solid gray;
+    width: 36em;
+    margin-top: 1em;
+    margin-left: 44em;
+}
+
+.outer_cuProfDetails{
+    margin-left: 45em;
+}
+
+.cuProfDetailsHeader{
+    color: #000000;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight: bold;
+}
+
+.cuHOD{
+    color: #000000;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.cuProf1{
+    color: #000000;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.cuProf2{
+    color: #000000;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.cuProf3{
+    color: #000000;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.cuProf4{
+    color: #000000;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}

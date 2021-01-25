@@ -1,0 +1,257 @@
+<html>
+    <head>
+        <title>Instructions</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="css/Instruction.css" rel="stylesheet">
+
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/UserSetting.js"></script>
+        <script>
+          function ajax_call()
+              {
+                  var s_id=localStorage.getItem("sid");
+                  var t_id=localStorage.getItem("tid");
+                  var s_name=localStorage.getItem("sname");
+                  var t_name=localStorage.getItem("tname");
+                  $.ajax({
+                      url:"Addstudent.php",
+                      method:"post",
+                      data:{"s_name":s_name,"t_name":t_name,"s_id":s_id,"t_id":t_id},
+                      dataType:"json",
+                      success:function(resp){
+                          console.log("hello1")
+                          console.log(resp);
+                          console.log(resp["name"]);
+                          if(resp["name"]=="sname")
+                          {
+                             console.log("sname");
+                              localStorage.removeItem("sname")
+                          }
+                          else
+                          {
+                              console.log("tname")
+                              localStorage.removeItem("tname")   
+                          }
+                        
+                      }
+                  });  
+              }
+            $(document).ready(function(){
+                ajax_call();
+                if(localStorage.getItem("sname") == null)
+                {
+                    $.post("StudentLogin.php",function(){
+                        location.href="StudentLogin.php";
+                    });
+                }
+            }); 
+        </script>
+    </head>
+    <body>
+        <header class="instruHeader">INSTRUCTIONS</header>
+
+        <img src="photo/InstructionBack.png" class="InstructionBackImg">
+        
+        <div class="instruBox">
+            <p class="allTitle">TITLE & INTRODUCTION</p>
+            <pre class="titleAndIntroP">
+1.1 Background
+1.2 Objectives
+1.3 Purpose, Scope, and Applicability
+      1.3.1 Purpose
+      1.3.2 Scope
+      1.3.3 Applicability
+1.4 Achievements
+1.5 Organisation of Report
+
+&#x25CF; Background: A description of the background and context of the project and its relation to work already done in the area. Summarise existing work in the area 
+   concerned with the project work.
+
+&#x25CF; Objectives: Concise statement of the aims and objectives of the project. Define exactly what is going to be done in the project; the objectives should be about 
+   30 /40 words.
+
+&#x25CF; Purpose, Scope and Applicability: The description of Purpose, Scope, and Applicability are given below:
+    &#9656; Purpose: Description of the topic of the project that answers questions on why this project is being done. How the project could improve the system its 
+        significance and theoretical framework.
+
+    &#9656; Scope: A brief overview of the methodology, assumptions and limitations. The students should answer the question: What are the main issues being covered in
+        the project? What are the main functions of the project?
+
+    &#9656; Applicability: The student should explain the direct and indirect applications of their work. Briefly discuss how this project will serve the computer world
+        and people.
+
+&#x25CF; Achievements: Explain what knowledge the student achieved after the completion of the work. What contributions has the project made to the chosen area? 
+   Goals achieved - describes the degree to which the findings support the original objectives laid out by the project. The goals may be partially 
+   or fully achieved, or exceeded.
+
+&#x25CF; Organisation of Report: Summarising the remaining chapters of the project report, in effect, giving the reader an overview of what is to come in the project
+   report. 
+
+            </pre>
+        </div>
+
+        <div class="instruBox">
+            <p class="allTitle">SURVEY OF TECHNOLOGIES</p>
+            <pre class="requirementP">
+&#x25CF; In this chapter Survey of Technologies should demonstrate the students awareness and understanding of Available Technologies related to the topic of the 
+   project. The student should give the detail of all the related technologies that are necessary to complete the project. The should describe the technologies 
+   available in the chosen area and present a comparative study of all those Available Technologies. Explain why the student selected the one technology for 
+   the completion of the objectives of the project.
+            </pre>
+        </div>
+
+        <div class="instruBox">
+            <p class="allTitle">REQUIREMENTS & ANALYSIS</p>
+            <pre class="designDetailsP">
+3.1 Problem Definition
+3.2 Requirements Specification
+3.3 Planning and Scheduling
+3.4 Software and Hardware Requirements
+3.5 Preliminary Product Description
+3.6 Conceptual Models
+
+&#x25CF; Problem Definition: Define the problem on which the students are working in the project. Provide details of the overall problem and then divide the problem in 
+   to sub-problems. Define each sub-problem clearly.
+
+&#x25CF; Requirements Specification: In this phase the student should define the requirements of the system, independent of how these requirements will be 
+   accomplished. The Requirements Specification describes the things in the system and the actions that can be done on these things. Identify the operation and 
+   problems of the existing system.
+
+&#x25CF; Planning and Scheduling: Planning and scheduling is a complicated part of software development. Planning, for our purposes, can be thought of as determining 
+   all the small tasks that must be carried out in order to accomplish the goal. Planning also takes into account, rules, known as constraints, which, control when 
+   certain tasks can or cannot happen. Scheduling can be thought of as determining whether adequate resources are available to carry out the plan. The student 
+   should show the Gantt chart and Program Evaluation Review Technique (PERT).
+
+&#x25CF; Software and Hardware Requirements: Define the details of all the software and hardware needed for the development and implementation of the project.
+    &#9656; Hardware Requirement: In this section, the equipment, graphics card, numeric co-processor, mouse, disk capacity, RAM capacity etc. necessary to run the 
+        software must be noted.
+
+    &#9656; Software Requirements: In this section, the operating system, the compiler, testing tools, linker, and the libraries etc.  necessary to compile, link and install 
+        the software must be listed.
+
+&#x25CF; Preliminary Product Description: Identify the requirements and objectives of the new system. Define the functions and operation of the application/system the 
+   students are developing as project.
+
+&#x25CF; Conceptual Models: The student should understand the problem domain and produce a model of the system, which describes operations that can be performed 
+   on the system, and the allowable sequences of those operations. Conceptual Models could consist of complete Data Flow Diagrams, ER diagrams, Object-oriented 
+   diagrams, System Flowcharts etc. 
+            </pre>
+        </div>
+
+        <div class="instruBox">
+            <p class="allTitle">SYSTEM DESIGN</p>
+            <pre class="systemImplementP">
+4.1 Basic Modules
+4.2 Data Design
+      4.2.1 Schema Design
+      4.2.2 Data Integrity and Constraints
+4.3 Procedural Design
+      4.3.1 Logic Diagrams
+      4.3.2 Data Structures
+      4.3.3 Algorithms Design
+4.4 User interface design
+4.5 Security Issues
+4.6 Test Cases Design
+
+Describes desired features and operations in detail, including screen layouts, business rules, process diagrams, pseudocode and other documentation.
+
+&#x25CF; Basic Modules: The students should follow the divide and conquer theory, so divide the overall problem into more manageable parts and develop each part 
+   or module separately. When all modules are ready, the student should integrate all the modules into one system. In this phase, the student should 
+   briefly describe all the modules and the functionality of these modules.
+
+&#x25CF; Data Design: Data design will consist of how data is organised, managed and manipulated.
+    &#9656; Schema Design: Define the structure and explanation of schemas used in the project.
+
+    &#9656; Data Integrity and Constraints: Define and explain all the validity checks and constraints provided to maintain data integrity.
+
+&#x25CF; Procedural Design: Procedural design is a systematic way for developing algorithms or procedurals. 
+    &#9656; Logic Diagrams: Define the systematical flow of procedure that improves its comprehension and helps the programmer during implementation. 
+        e.g., Control Flow Chart, Process Diagrams etc.
+
+    &#9656; Data Structures: Create and define the data structure used in procedures.
+
+    &#9656; Algorithms Design: With proper explanations of input data, output data, logic of processes, design and explain the working of algorithms.
+
+&#x25CF; User Interface Design: Define user, task, environment analysis and how to map those requirements in order to develop a "User Interface". Describe the 
+   external and internal components and the architecture of user interface. Show some rough pictorial views of the user interface and its components.
+
+&#x25CF; Security Issues: Discuss Real-time considerations and Security issues related to the project and explain how the student intends avoiding those security 
+   problems. What are the security policy plans and architecture?
+
+&#x25CF; Test Cases Design: Define test cases, which will provide easy detection of errors and mistakes with in a minimum period of time and with the least effort. 
+   Explain the different conditions in which the students wish to ensure the correct working of theproject. 
+            </pre>
+        </div>
+
+        <div class="instruBox">
+            <p class="allTitle">IMPLEMENTATION & TESTING</p>
+            <pre class="resultP">
+5.1 Implementation Approaches
+5.2 Coding Details and Code Efficiency
+      5.2.1 Code Efficiency
+5.3 Testing Approach
+      5.3.1 Unit Testing
+      5.3.2 Integrated Testing
+      5.3.3 Beta Testing
+5.4 Modifications and Improvements
+5.5 Test Cases
+
+&#x25CF; Implementation Approaches: Define the plan of implementation, and the standards the students have used in the implementation.
+
+&#x25CF; Coding Details and Code Efficiency: Students not need include full source code, instead, include only the important codes (algorithms, applets code, forms 
+   code etc). The program code should contain comments needed for explaining the work a piece of code does. Comments may be needed to explain why it 
+   does it, or, why it does a particular way. The student can explain the function of the code with a shot of the output screen of that program code.
+    &#9656; Code Efficiency: The student should explain how the code is efficient and how the students have handled code optimisation.
+
+&#x25CF; Testing Approach: Testing should be according to the scheme presented in the system design chapter and should follow some suitable model – e.g., category 
+   partition, state machine-based. Both functional testing and user-acceptance testing are appropriate. Explain the approach of testing.
+    &#9656; Unit Testing: Unit testing deals with testing a unit or module as a whole. This would test the interaction of many functions but, do confine the test within one 
+        module.
+
+    &#9656; Integrated Testing: Brings all the modules together into a special testing environment, then checks for errors, bugs and interoperability. It deals with tests for 
+        the entire application. Application limits and features are tested here.
+
+    &#9656; Beta Testing is performed by real users of the software application in a real environment. Beta testing is one of the type of User Acceptance Testing.
+
+&#x25CF; Modifications and Improvements: Once the students finish the testing they are bound to be faced with bugs, errors and they will need to modify your source 
+   code to improve the system. Define what modification are implemented in the system and how it improved the system. 
+            </pre>
+        </div>
+
+        <div class="instruBox">
+            <p class="allTitle">RESULTS & DISCUSSION</p>
+            <pre class="concluFutScoP">
+6.1 Test Reports
+6.2 User Documentation
+
+&#x25CF; Test Reports: Explain the test results and reports based on the test cases, which should show that theproject is capable of facing any problematic situation 
+   and that it works fine in different conditions. Take the different sample inputs and show the outputs.
+
+&#x25CF; User Documentation: Define the working of the software; explain its different functions, components with screen shots. The user document should provide 
+   all the details of the product in such a way that any user reading the manual, is able to understand the working and functionality of the document. 
+            </pre>
+        </div>
+
+        <div class="instruBox bottomBox">
+            <p class="allTitle">CONCLUSIONS</p>
+            <pre class="referenceP">
+7.1 Conclusion
+      7.1.1 Significance of the System
+7.2 Limitations of the System
+7.3 Future Scope of the Project
+
+&#x25CF; Conclusion: The conclusions can be summarised in a fairly short chapter (2 or 3 pages). This chapter brings together many of the points that would have 
+   made in the other chapters.
+
+&#x25CF; Limitations of the System: Explain the limitations encountered during the testing of the project that the students were not able to modify. List the criticisms 
+   accepted during the demonstrations of the project. 
+
+&#x25CF; Future Scope of the Project describes two things: firstly, new areas of investigation prompted by developments in this project, and secondly, parts of the 
+   current work that was not completed due to time constraints and/or problems encountered. 
+            </pre>
+        </div>
+    </body>
+</html>

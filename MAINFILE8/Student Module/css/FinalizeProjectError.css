@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
+
+html{
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+input:-webkit-autofill:focus {
+    transition: background-color 9000s ease-in-out 0s;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////// Error1 */
+.outer-fPError1{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    user-select: none;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+}
+
+.fPError1{
+    position: absolute;
+    background-color: #ffffff;
+    width: 33em;
+    height: 17.5em;
+    border-radius: 15px;
+    padding-top: 1px;
+    /* margin-top: 14%;
+    margin-left: 32.8%; */
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.oops1{
+    font-size: 23px;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: .8em;
+}
+
+.errorMessage1{
+    font-size: 19px;
+    color: #000000;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: .8em;
+    margin-left: 2.8em;
+    width: 23em;
+}
+
+.okError1{
+    background-color: blue;
+    width: 7.5em;
+    height: 2em;
+    border-radius: 20px;
+    color: #ffffff;
+    margin-top: 3em;
+    margin-left: 7em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: .9em;
+    cursor: pointer;
+}
+
+.cPError1{
+    background-color: blue;
+    width: 13em;
+    height: 2em;
+    border-radius: 20px;
+    color: #ffffff;
+    margin-top: -2.9em;
+    margin-left: 23em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: .9em;
+    cursor: pointer;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////// Error2 */
+.outer-fPError2{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    user-select: none;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+}
+
+.fPError2{
+    position: absolute;
+    background-color: #ffffff;
+    width: 33em;
+    height: 14em;
+    border-radius: 15px;
+    padding-top: 1px;
+    /* margin-top: 14%;
+    margin-left: 32.8%; */
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.error2{
+    font-size: 23px;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: .8em;
+}
+
+.errorMessage2{
+    font-size: 19px;
+    color: #000000;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: .8em;
+    margin-left: 2.8em;
+    width: 23em;
+}
+
+.gotItError2{
+    background-color: blue;
+    width: 7.5em;
+    height: 2em;
+    border-radius: 20px;
+    color: #ffffff;
+    margin-top: 2em;
+    margin-left: 16.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: .9em;
+    cursor: pointer;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////// Error3 */
+.outer-fPError3{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    user-select: none;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+}
+
+.fPError3{
+    position: absolute;
+    background-color: #ffffff;
+    width: 33em;
+    height: 14em;
+    border-radius: 15px;
+    padding-top: 1px;
+    /* margin-top: 14%;
+    margin-left: 32.8%; */
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.error3{
+    font-size: 23px;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: .8em;
+}
+
+.errorMessage3{
+    font-size: 19px;
+    color: #000000;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: .8em;
+    margin-left: 2.8em;
+    width: 23em;
+}
+
+.gotItError3{
+    background-color: blue;
+    width: 7.5em;
+    height: 2em;
+    border-radius: 20px;
+    color: #ffffff;
+    margin-top: 2em;
+    margin-left: 16.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: .9em;
+    cursor: pointer;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////// NOTE */
+.outer-fPNote{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    user-select: none;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+}
+
+.fPNote{
+    position: absolute;
+    background-color: #ffffff;
+    width: 33.3em;
+    height: 22.7em;
+    border-radius: 15px;
+    padding-top: 1px;
+    /* margin-top: 14%;
+    margin-left: 32.8%; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fPNoteTitle{
+    font-size: 23px;
+    color: #0c059d;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1.2em;
+    margin-left: 2.1em;
+}
+
+.noteMessage{
+    font-size: 17px;
+    color: #000000;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -.5em;
+    margin-left: 2em;
+    width: 26.1em;
+    border: 1px solid #09096a;
+    border-radius: 12px;
+    padding: 18px 10px 18px 10px;
+}
+
+.gotItNote{
+    background-color: blue;
+    width: 9em;
+    height: 2em;
+    border-radius: 20px;
+    color: #ffffff;
+    margin-top: 1em;
+    margin-left: 16.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: .9em;
+    cursor: pointer;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////// ALERT */
+.outer-fPAlert{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    user-select: none;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+}
+
+.fPAlert{
+    position: absolute;
+    background-color: #ffffff;
+    padding: 2em;
+    padding-bottom: 1em;
+    border-radius: 15px;
+    padding-top: 1px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fPAlertTitle{
+    font-size: 23px;
+    color: #0c059d;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.outer_alertMessage{
+    max-height: 20em;
+    overflow-x: scroll;
+    border-radius: 12px;
+    margin-top: -1em;
+}
+
+.alertMessage{
+    font-size: 17px;
+    color: #000000;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1em;
+    width: 26.1em;
+    border: 1px solid #09096a;
+    border-radius: 12px;
+    padding: 18px 10px 18px 10px;
+}
+
+.gotItAlert{
+    background-color: blue;
+    width: 9em;
+    height: 2em;
+    border-radius: 20px;
+    color: #ffffff;
+    margin-top: 1em;
+    margin-left: 13.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: .9em;
+    cursor: pointer;
+}

@@ -1,0 +1,109 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.wmodal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+    user-select: none;
+}
+
+.wmodal-content {
+    position: absolute;
+    background-color: #fefefe;
+    margin: auto;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid #888;
+    width: 460px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wcircle {
+    border: 4px solid #f27474;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+}
+
+.w11{
+    position: absolute;
+    height: 5px;
+    width: 47px;
+    background-color: #f27474;
+    display: block;
+    top: 37px;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+.w1{
+    transform: rotate(0deg);
+    right: 16px;
+}
+
+.w22{
+    position: absolute;
+    height: 5px;
+    width: 47px;
+    background-color: #f27474;
+    display: block;
+    top: 37px;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.w2{
+    transform: rotate(0deg);
+    left: 16px;
+}
+
+.wtitle-text{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(59, 56, 56);
+}
+
+.winfo-text{
+    font-size: 17px;
+    color: rgb(124, 116, 116);
+}
+
+.wok-content-block {
+    margin-right: 13px;
+    background-color: #7cd1f9;
+    padding-top: 12px;
+    width: 70px;
+    height:30px;
+    border-radius: 5px;
+    border: 1px solid rgb(198, 209, 189);
+    float: right;
+    
+}
+
+.wok-text {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.wok-text:hover,
+.wok-text:focus, 
+.wok-content-block:hover,
+.wok-content-block:focus{
+    cursor: pointer;
+}
